@@ -1,8 +1,7 @@
 require 'nn'
-local withCuda = pcall(require, 'cutorch')
 
 require 'libstn'
-if withCuda then
+if cutorch then
    require 'libcustn'
 end
 
